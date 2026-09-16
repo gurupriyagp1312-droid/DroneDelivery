@@ -3,6 +3,12 @@ Drone Delivery – Java Swing
 A simple Java Swing-based Drone Delivery application where the user controls a drone using the Up, Down, Left, and Right arrow keys to reach a delivery destination.
 The project demonstrates Java Swing GUI, Key Event Handling, Image Icons, Collision Detection, Battery Management, and Random Destination Generation. 
 
+📌 Project Overview
+
+The Drone Delivery application simulates a simple drone delivery system using Java Swing.
+The drone can be moved using the Arrow Keys. Every valid movement reduces the drone's battery by 1%. When the drone reaches the delivery destination, the delivery is completed, the delivery count increases, and the battery is automatically recharged to 100% for the next delivery.
+A new delivery destination is generated at a different position after every successful delivery.
+
 ✨ Features
 
 🚁 Move the drone using Arrow Keys
@@ -60,9 +66,16 @@ KeyAction
 📂 Project Structure
 DroneDelivery/
 │
-├── DroneDelivery.java
+
+├── DroneDelivery.jar
+
+├── Drone1.java
+
 ├── drone.png
-└── house.png
+
+├── house.png
+
+└── README.md
 
 Note: Keep drone.png and house.png in the same folder as the Java file, or update the image paths in the code accordingly.
 
@@ -90,21 +103,31 @@ If the battery reaches 0%, the drone stops moving and displays "Battery Empty".
 
 🚀 How to Run
 
-1. Clone the repository
-  git clone <your-repository-url>
+Method 1 – Run using Java
 
-2. Open the project
-  Open the project in Eclipse, IntelliJ IDEA, VS Code, or any Java-supported IDE.
+Make sure Java/JDK is installed on your computer.
+Open the project folder in Command Prompt or Terminal and run:
+java -jar DroneDelivery.jar
 
-3. Make sure the images are available
-Place:
-  drone.png
-  house.png
-  in the required project directory.
+Method 2 – Run the Source Code
 
-4. Compile and Run
-  javac DroneDelivery.java
-  java DroneDelivery
+Compile the Java file:
+
+javac Drone1.java
+
+Then run:
+
+java Drone1
+
+⚠️ Important
+
+Keep the following files in the same folder:
+
+DroneDelivery.jar
+
+drone.png
+
+house.png
 
 📚 Concepts Demonstrated
 
